@@ -12,37 +12,64 @@
 </head>
 <body>
 
-  <div class= firstItem>
-      <label for="item">IronBubble-head</label><label for="price">$25.00</label><label for="cantidad">QTY</label> <input name="cantidad" type="0"> <label for ="total">$0.00</label> <button>Delete</button>
-      </div>
+  <div id="listaGeneral">
+    <div id="primerRenglon" class= "ItemRow">
+        <label for="item">IronBubble-head</label>
+        $<span id="price1" class="Prices" >25.00</span>
+        <label for="valor1">QTY</label> 
+        <input id="cantidad1" class="ClaseCantidades" value="0" type="text"/> 
+        $<span id ="total1" class="Totales">0.00</span> 
+        <button class="btn-delete" >Delete</button>
+    </div>
 
-    <div class= secondItem>
-     <label for="item">IronShirt</label>              
-     <label for="price">$15.00</label> 
-     <label for="cantidad">QTY</label>
-      <input name="cantidad" type= "0"> <label for="total">$0.00</label> <button>Delete</button>
-    </div>
-  
-     <div class= thirdItem> 
-      <label for="item">IronCup</label> <label for="price">$10.00</label> <label for="cantidad">QTY</label> <input name="cantidad" type="0"> <label for="total">$0.00</label> <button>Delete</button>
-     </div>
+      <div class= "ItemRow">
+      <label for="item">IronShirt</label>              
+      $<span id="price2" class="Prices">15.00</span> 
+      <label for="valor2">QTY</label>
+      <input id="cantidad2" class="ClaseCantidades" value="0" type="text"/> 
+      $<span id ="total2" class="Totales">0.00</span> 
+      <button class="btn-delete">Delete</button>
+      </div>
     
+      <div class= "ItemRow"> 
+        <label for="item">IronCup</label> 
+        $<span id="price3" class="Prices">10.00</span> 
+        <label for="valor3">QTY</label> 
+        <input id="cantidad3" class="ClaseCantidades" value="0" type="text"/>
+        $<span id ="total3" class="Totales">0.00</span> 
+        <button class="btn-delete">Delete</button>
+      </div>
       
-     <div class= fourItem> 
-      <label for="item">IronSticker</label> <label for="price">$1.00</label> <label for="cantidad">QTY</label> <input name="cantidad" type="0"> <label for="total">$0.00</label> <button>Delete</button>
+        
+      <div class= "ItemRow"> 
+        <label for="item">IronSticker</label> 
+        $<span id="price4" class="Prices">1.00</span> 
+        <label for="valor4">QTY</label> 
+        <input id="cantidad4" class="ClaseCantidades" value="0" type="text"/>
+        $<span id ="total4" class="Totales">0.00</span>
+        <button class="btn-delete">Delete</button>
+      </div>
+    
+      <div class= "ItemRow">
+        <label for="item">IronAxe</label> 
+        $<span id="price5" class="Prices">100.00</span> 
+        <label for="valor5">QTY</label> 
+        <input id="cantidad5" class="ClaseCantidades" value="0" type="text"/> 
+        $<span id ="total5" class="Totales">0.00</span> 
+        <button class="btn-delete">Delete</button>
+      </div>
     </div>
-  
-    <div class= fiveItem> 
-      <label for="item">IronAxe</label> <label for="price">$100.00</label> <label for="cantidad">QTY</label> <input name="cantidad" type="0"> <label for="total">$0.00</label> <button>Delete</button>
-    </div>
-</body>
+    <h2>Total Price: $<span id="TotalPrice">0</span></h2>
+
+
 
 <footer>
   
-  <input name="calculate" type="text">
-  <div class= "click">
-     <button>Calculate Prices</button> 
-    </div>
+  <input name="create" type="button" id = "new-item-create" value="Create"/> 
+
+  <input class="click" name="calculate" type="button" id = "calc-prices-button" value="Calculate Prices"/>
+    
+    
     <div class= "quantity">
     
  </div>
